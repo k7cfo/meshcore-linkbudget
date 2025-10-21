@@ -1,19 +1,23 @@
 # MeshCore Link Budget
 
-**MeshCore Link Budget** is a simple, data-driven web app that visualizes how different **LoRa radio configuration settings** affect network **speed, sensitivity, and channel utilization** in conjunction with **MeshCore mesh networking**.
+**MeshCore Link Budget** is a lightweight, interactive web app that visualizes how different **LoRa radio configurations** affect network **speed, sensitivity, and channel utilization** — optimized for use with **MeshCore mesh networking**.
+
+🛰️ **Live Demo:** [westcoastmesh-linkbudget.vercel.app](https://westcoastmesh-linkbudget.vercel.app/)
 
 ---
 
 ## 📊 Overview
 
-The site provides an interactive table of LoRa modem configurations — showing how **spreading factor (SF)**, **bandwidth**, and **symbol time** influence performance tradeoffs between **throughput** and **reliability**.  
-Users can search, sort, and compare presets to understand how changing parameters impacts link efficiency.
+This project helps you explore the tradeoffs between **throughput**, **range**, and **reliability** for LoRa-based communication.  
+Each configuration combines spreading factor (SF), bandwidth, and symbol timing to reveal how small changes in radio parameters can dramatically alter link performance.
+
+The data is displayed in a clean, searchable dashboard that makes technical radio metrics easy to interpret.
 
 ---
 
 ## 🔍 Key Metrics Displayed
 
-- **Total Configurations:** 50 unique LoRa radio settings  
+- **Total Configurations:** 50 unique LoRa settings  
 - **Max Speed:** 62.50 kbps  
 - **Min Speed:** 0.39 kbps  
 - **Best Sensitivity:** –136.06 dBm  
@@ -25,38 +29,38 @@ Users can search, sort, and compare presets to understand how changing parameter
 
 | Column | Description |
 |:-------|:-------------|
-| **Preset Name** | Human-readable configuration label (e.g., Narrow Very Slow) |
-| **SF (Spreading Factor)** | Determines signal processing gain and range; higher SF = slower, more reliable |
-| **Bandwidth (kHz)** | Transmission bandwidth — narrower = longer range but lower throughput |
+| **Preset Name** | Human-readable label (e.g., “Narrow Very Slow”) |
+| **SF (Spreading Factor)** | Determines signal range and reliability (higher = slower, more robust) |
+| **Bandwidth (kHz)** | Transmission width — higher bandwidth = faster but less sensitive |
 | **KBPS** | Effective data rate (kilobits per second) |
-| **dBm No Noise** | Receiver sensitivity — lower (more negative) means better performance at weak signals |
-| **Symbol Time (ms)** | Time per LoRa symbol; relates to SF and bandwidth |
-| **CH Util (%)** | Channel utilization — how much air-time a signal consumes (efficiency measure) |
+| **dBm No Noise** | Sensitivity level — lower (more negative) = stronger performance in weak signal conditions |
+| **Symbol Time (ms)** | Duration of one LoRa symbol; affects airtime and efficiency |
+| **CH Util (%)** | Channel utilization — how much airtime the signal occupies |
 
 ---
 
-## 🧩 Example Insights
+## 💡 Insights
 
-- **High SF (e.g., 10–12)** increases reliability and range but greatly reduces speed and increases channel utilization.  
-- **Wider Bandwidth (e.g., 62.5 kHz)** improves speed but sacrifices sensitivity.  
-- Optimal setups depend on your mesh density and desired range–throughput balance.
-
----
-
-## 🤝 Sponsorship
-
-Sponsored by **West Coast Mesh**, a community initiative exploring resilient communication networks for real-world use in rural, emergency, and off-grid scenarios.
+- **Higher SF values** (e.g., 10–12) boost range but dramatically lower data rate and increase channel usage.  
+- **Narrow bandwidths** improve sensitivity for long-range links.  
+- **Balanced configurations** (mid-SF and moderate bandwidth) perform best for general-purpose mesh networks.
 
 ---
 
-## 🌐 Live Interface
+## ⚙️ Features
 
-The web interface supports:
-- Searchable and sortable preset tables  
-- Real-time metrics display  
-- Preset-based filtering  
-- Responsive dark-mode UI  
+- 📈 **Interactive table:** Sort and filter presets in real time  
+- 🎚️ **Dynamic metrics:** Instantly view how changes affect speed and channel use  
+- 🌓 **Dark-mode UI:** Built for clarity and modern display environments  
+- 🧩 **Simple data model:** Easy to extend or integrate into MeshCore-based tools  
 
 ---
 
-*Built to help radio enthusiasts, researchers, and network engineers visualize LoRa performance in mesh networking environments.*
+## 🤝 Sponsored By
+
+**West Coast Mesh** — a community-driven initiative focused on resilient, off-grid communication systems across California and beyond.  
+Learn more and explore related mesh networking tools at [westcoastmesh-linkbudget.vercel.app](https://westcoastmesh-linkbudget.vercel.app/).
+
+---
+
+*Built for radio enthusiasts, engineers, and experimenters who want to understand and optimize LoRa mesh performance.*  
