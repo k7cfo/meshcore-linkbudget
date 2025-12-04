@@ -123,12 +123,12 @@ export function MeshCoreTable({ configs }: MeshCoreTableProps) {
         </div>
 
         <div className="border border-border rounded-lg overflow-hidden">
-          <div className="overflow-x-auto">
+          <div className="overflow-x-auto max-h-[600px] overflow-y-auto">
             <table className="w-full">
-              <thead>
+              <thead className="sticky top-0 z-10">
                 <tr className="border-b border-border bg-card">
                   <th
-                    className="text-left p-4 font-mono text-xs font-semibold text-muted-foreground uppercase tracking-wider cursor-pointer hover:text-foreground transition-colors select-none"
+                    className="text-left p-4 font-mono text-xs font-semibold text-muted-foreground uppercase tracking-wider cursor-pointer hover:text-foreground transition-colors select-none bg-card"
                     onClick={() => handleSort("presetName")}
                   >
                     <div className="flex items-center gap-2">
@@ -151,7 +151,7 @@ export function MeshCoreTable({ configs }: MeshCoreTableProps) {
                     </div>
                   </th>
                   <th
-                    className="text-right p-4 font-mono text-xs font-semibold text-muted-foreground uppercase tracking-wider cursor-pointer hover:text-foreground transition-colors select-none"
+                    className="text-right p-4 font-mono text-xs font-semibold text-muted-foreground uppercase tracking-wider cursor-pointer hover:text-foreground transition-colors select-none bg-card"
                     onClick={() => handleSort("spreadingFactor")}
                   >
                     <div className="flex items-center justify-end gap-2">
@@ -160,7 +160,7 @@ export function MeshCoreTable({ configs }: MeshCoreTableProps) {
                     </div>
                   </th>
                   <th
-                    className="text-right p-4 font-mono text-xs font-semibold text-muted-foreground uppercase tracking-wider cursor-pointer hover:text-foreground transition-colors select-none"
+                    className="text-right p-4 font-mono text-xs font-semibold text-muted-foreground uppercase tracking-wider cursor-pointer hover:text-foreground transition-colors select-none bg-card"
                     onClick={() => handleSort("bandwidthKhz")}
                   >
                     <div className="flex items-center justify-end gap-2">
@@ -169,7 +169,7 @@ export function MeshCoreTable({ configs }: MeshCoreTableProps) {
                     </div>
                   </th>
                   <th
-                    className="text-right p-4 font-mono text-xs font-semibold text-muted-foreground uppercase tracking-wider cursor-pointer hover:text-foreground transition-colors select-none"
+                    className="text-right p-4 font-mono text-xs font-semibold text-muted-foreground uppercase tracking-wider cursor-pointer hover:text-foreground transition-colors select-none bg-card"
                     onClick={() => handleSort("kbps")}
                   >
                     <div className="flex items-center justify-end gap-2">
@@ -178,7 +178,7 @@ export function MeshCoreTable({ configs }: MeshCoreTableProps) {
                     </div>
                   </th>
                   <th
-                    className="text-right p-4 font-mono text-xs font-semibold text-muted-foreground uppercase tracking-wider cursor-pointer hover:text-foreground transition-colors select-none"
+                    className="text-right p-4 font-mono text-xs font-semibold text-muted-foreground uppercase tracking-wider cursor-pointer hover:text-foreground transition-colors select-none bg-card"
                     onClick={() => handleSort("dBmNoNoise")}
                   >
                     <div className="flex items-center justify-end gap-2">
@@ -187,7 +187,7 @@ export function MeshCoreTable({ configs }: MeshCoreTableProps) {
                     </div>
                   </th>
                   <th
-                    className="text-right p-4 font-mono text-xs font-semibold text-muted-foreground uppercase tracking-wider cursor-pointer hover:text-foreground transition-colors select-none"
+                    className="text-right p-4 font-mono text-xs font-semibold text-muted-foreground uppercase tracking-wider cursor-pointer hover:text-foreground transition-colors select-none bg-card"
                     onClick={() => handleSort("symbolTimeMs")}
                   >
                     <div className="flex items-center justify-end gap-2">
@@ -196,7 +196,7 @@ export function MeshCoreTable({ configs }: MeshCoreTableProps) {
                     </div>
                   </th>
                   <th
-                    className="text-right p-4 font-mono text-xs font-semibold text-muted-foreground uppercase tracking-wider cursor-pointer hover:text-foreground transition-colors select-none"
+                    className="text-right p-4 font-mono text-xs font-semibold text-muted-foreground uppercase tracking-wider cursor-pointer hover:text-foreground transition-colors select-none bg-card"
                     onClick={() => handleSort("chUtil")}
                   >
                     <div className="flex items-center justify-end gap-2">
